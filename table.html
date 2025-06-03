@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <style>
+    /* Reset and base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header.blog-header {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.blog-header h1 {
+  font-size: 1.8rem;
+}
+
+header.blog-header nav a {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.blog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.blog-table th,
+.blog-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.blog-table th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.blog-table td a {
+  margin-right: 0.5rem;
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+
+.blog-table td a:hover {
+  color: #1d4ed8;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+footer.blog-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  margin-top: 3rem;
+}
+
+  </style>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="blog-header">
+    <h1><i class="fas fa-blog"></i> My Blog Posts</h1>
+    <nav>
+      <a href="portfolio.html"><i class="fas fa-home"></i> Home</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <table class="blog-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>How I Built My Portfolio</td>
+          <td>Grace Umutoni</td>
+          <td>2025-05-30</td>
+          <td>
+            <a href="#" title="View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Edit"><i class="fas fa-edit"></i></a>
+            <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tips for New Developers</td>
+          <td>Cyusa Patience</td>
+          <td>2025-06-01</td>
+          <td>
+            <a href="#" title="View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Edit"><i class="fas fa-edit"></i></a>
+            <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="blog-footer">
+    <p>© 2025 Grace Umutoni - Blog Platform</p>
+  </footer>
+</body>
+</html>

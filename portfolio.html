@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Grace Paccy</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a> 
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome!</h2>
+    <p>This is my personal portfolio website.</p>
+    <img src="pexels-clement-couturier-546640561-18308288.jpg" alt="Grace Umutoni's profile photo">
+    <button onclick="showMessage()">Click Me</button>
+  </section>
+
+  <section id="about" class="section-box">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>Hello! I'm Grace Umutoni, Cyusa Patience, a passionate web developer focused on creating user-friendly and beautiful websites.</p>
+  </section>
+
+  <section id="projects" class="section-box">
+    <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="pexels-divinetechygirl-1181677.jpg" alt="Portfolio Project">
+        <h3>Personal Portfolio</h3>
+        <p>A clean and responsive website to showcase my skills and contact details.</p>
+      </div>
+      <div class="project-card">
+        <img src="pexels-goumbik-574071.jpg" alt="E-commerce Project">
+        <h3>Mini E-Commerce</h3>
+        <p>Online store with shopping cart functionality using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <a href="table.html">
+          <img src="pexels-fauxels-3184460.jpg" alt="Blog Project">
+          <h3>Blog Platform</h3>
+          <p>Simple blog site where users can read and post articles.</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="todo.html">
+          <img src="pexels-energepic-com-27411-110473.jpg" alt="To-Do List Project">
+          <h3>To-Do List</h3>
+          <p>This is To-Do List where you can make a list of tasks to complete.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-box">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <p><i class="fas fa-envelope-open-text"></i> Email: <a href="mailto:umutonigrace108@example.com">umutonigrace108@example.com</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/patience" target="_blank">linkedin.com/in/Patience</a></p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/paccy9" target="_blank">github.com/Tonnie99</a></p>
+
+    <section id="contact" class="section-box">
+  <h2><i class="fas fa-envelope"></i> Contact</h2>
+  
+  <form id="contact-form" action="mailto:umutonigrace108@example.com" method="POST" enctype="text/plain">
+    <div class="form-group">
+      <label for="name"><i class="fas fa-user"></i> Name</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email"><i class="fas fa-envelope"></i> Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message"><i class="fas fa-comment"></i> Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Grace Umutoni</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for visiting my portfolio!");
+    }
+  </script>
+</body>
+</html>
